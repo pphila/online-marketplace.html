@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
+  <title>Hopes and Dreams</title>
+</head>
+<body>
+  <h1>Welcome to the Hopes and Dream shop</h1>
+
+  <h2>Our Products</h2>
+
+  <h2>Order Here</h2>
+    <div class="container">
+      <form id="orderform">
+        <div class="order-group">
+          <label for="firstName">First name</label>
+          <input id="firstName" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="lastName">Last name</label>
+          <input id="lastName" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="address">Address</label>
+          <input id="address" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="apartment">Apartment, suite, etc.</label>
+          <input id="apartment" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="city">City</label>
+          <input id="city" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="state">State</label>
+          <select class="order-group" id="state">
+            <option>Alaska</option>
+            <option>Washington</option>
+            <option>Oregon</option>
+            <option>California</option>
+            <option>Hawaii</option>
+          </select>
+        </div>
+        <div class="order-group">
+          <label for="zipCode">Zip code</label>
+          <input id="zipCode" class="name-group" type="text">
+        </div>
+        <div class="order-group">
+          <label for="product">Product</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="product" value="Hope" checked>
+              Hope
+            </label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="product" value="Dreams">
+              Dreams
+            </label>
+          </div>
+          <div class="button">
+          <button type="submit" class="btn">Submit Order</button>
+          </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  <div id="receipt">
+    <h2>Thanks for your order, <span class="firstName"></span>!</h2>
+    <h3>Order Details</h3>
+    <p><span class="firstName"></span> <span class="lastName"></span></p>
+    <p><span class="address"></span></p>
+    <p><span class="apartment"></span></p>
+    <p><span class="city"></span></p>
+    <p><span class="state"></span>, <span class="zipCode"></span></p>
+    <p>You ordered <span class="product"></span></p>
+    <p>Order total: $3,000,000</p>
+    <h3>Thanks for your business! Come again!</h3>
+  </div>
+</body>
+</html>
